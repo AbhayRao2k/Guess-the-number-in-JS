@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <p>Enter a guess between 0 to 100</p>
+
+    <!-- Every button wrapped inside a form tag, its default behaviour will be to submit the given input -->
+    <!-- By giving the type="button" it wont show to fill out the required input field -->
+    <form>
+      <input class="user-input" type="number" placeholder="Enter the number" min="0" max="100" required/>
+      <div>
+        <button class="submit-btn">Submit</button>
+        <button type="button" class="start-game" disabled>Start Game</button>
+      </div>
+    </form>
+    <p class="result"></p>
+    <p class="all-guesses"></p>
+  </body>
+</html>
